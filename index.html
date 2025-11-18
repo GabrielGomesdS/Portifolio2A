@@ -1,0 +1,104 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Meu Portfólio</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+  <div class="nav-left">
+    <img class="logoSite" src="./assets/favicon-32x32.png">
+    <a class="logo" href="#">MeuPortfólio</a>
+  </div>
+
+  <ul class="nav-right">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+</nav>
+</header>
+
+
+<main>
+<section class="hero">
+<!-- Substitua URL_DA_SUA_IMAGEM_PERFIL pelo link da sua foto de perfil -->
+<img class="profile-photo" src="./assets/kalogo.png" alt="Foto de perfil">
+<div class="hero-text">
+<h1>Olá, eu sou <span class="name">Karine</span></h1>
+<p class="subtitle">Desenvolvedora • Aluna • Criadora</p>
+<a class="btn" href="#projects">Ver projetos</a>
+</div>
+</section>
+
+
+<section id="about" class="about">
+<h2>Sobre mim</h2>
+<p>Karine é uma jovem desenvolvedora apaixonada por tecnologia e criatividade. Desde que começou seus estudos, vem se destacando pela curiosidade, determinação e vontade de aprender coisas novas todos os dias. Gosta de transformar ideias em projetos funcionais, explorando desde interfaces intuitivas até pequenos sistemas completos.
+
+Além da área de desenvolvimento, Karine também carrega hobbies que influenciam sua forma de pensar e criar. Ela gosta de desenhar, usando a arte como forma de expressão; jogar, o que estimula sua lógica e imaginação; e ouvir música, seu passatempo favorito enquanto programa, trazendo sempre uma boa trilha sonora para seus códigos.
+
+Com seu talento, foco e personalidade leve, Karine segue evoluindo e construindo seu caminho no mundo da tecnologia — sempre com criatividade, cuidado e muita dedicação.</p>
+</section>
+
+
+<section id="projects" class="projects">
+<h2>Projetos</h2>
+<div class="grid">
+<!-- Exemplo de projeto. Substitua as URLs de imagem pelos seus links -->
+<article class="card">
+<a href="#">
+<img src="./assets/projeto1.jpg" alt="Projeto 1">
+<div class="card-body">
+<h3>Projeto 1</h3>
+<p>Descrição curta do projeto.</p>
+</div>
+</a>
+</article>
+
+
+<article class="card">
+<a href="#">
+<img src="./assets/projeto2.jpg" alt="Projeto 2">
+<div class="card-body">
+<h3>Projeto 2</h3>
+<p>Descrição curta do projeto.</p>
+</div>
+</a>
+</article>
+
+
+<article class="card">
+<a href="#">
+<img src="./assets/projeto3.jpg" alt="Projeto 3">
+<div class="card-body">
+<h3>Projeto 3</h3>
+<p>Descrição curta do projeto.</p>
+</div>
+</a>
+</article>
+
+
+</div>
+</section>
+
+
+<section id="contact" class="contact">
+<h2>Contato</h2>
+<p>Me mande um e‑mail: <a href="mailto:seu@email.com">karine@gmail.com</a></p>
+<p>Ou me encontre nas redes — <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>© <span id="year"></span> Seu Nome. Todos os direitos reservados.</p>
+</footer>
+
+
+<script>
+// atualiza ano no rodapé
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
