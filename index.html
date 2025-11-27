@@ -1,104 +1,147 @@
-<!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Meu Portfólio</title>
-<link rel="stylesheet" href="css/styles.css">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Karine Vitória</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="site-header">
-<nav class="nav">
-  <div class="nav-left">
-    <img class="logoSite" src="./assets/favicon-32x32.png">
-    <a class="logo" href="#">MeuPortfólio</a>
+
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">karine.vitoria</div>
+      <button id="navToggle" class="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="nav-menu" id="nav-menu">
+    <ul>
+      <li><a href="biografia.html">BIOGRAFIA
+
+      </a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="kicker">OLA PESSOAL</p>
+      <h1>Eu sou Karine,</h1>
+      <h2>Aprendiz de Front-ened.</h2>
+
+      <a href="#contato" class="btn-outline">FALE COMIGO</a>
+    </div>
+
+    <div class="hero-visual">
+      <div class="circle"></div>
+
+      <!-- Moldura da foto -->
+      <div class="photo-frame">
+        <img src="copiaperfil.jpg" alt="Minha foto">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MIM -->
+  <section class="panel">
+    <h2>Sobre mim</h2>
+    <p>
+      Meu nome é Karine Vitoria Sousa, 
+      tenho 16 anos e nasci em Paulistana,
+       mas minha moradia
+      fica sediada no interior de Acauã.
+       Atualmente, estudo no CETI Antonio Rodrigues Filho,
+      na Segunda série, turma A,
+       e estou cursando desenvolvimento de sistemas.
+    </p>
+  </section>
+
+  <!-- CONHECIMENTOS -->
+  <section id="conhecimentos">
+    <h2 class="shine-title">CONHECIMENTOS</h2>
+     <div class="knowledge-card">
+    <div class="knowledge-card">
+    <div class="knowledge-container">
+        <div class="knowledge-card"><img src="html.jpeg" alt="HTML"></div>
+        <h3>HTML</h3>
+        <p>Tenho conhecimentos básicos sobre HTML e estruturação.</p>
+      </div>
+      
+        <div class="knowledge-card"><img src="css.jpeg" alt="CSS"></div>
+        <h3>CSS</h3>
+        <p>Básico utilizando cores, estilização e layouts.</p>
+      </div>
+
+    
+        <div class="knowledge-card"><img src="js.jpeg" alt="JavaScript"></div>
+        <h3>JavaScript</h3>
+        <p>Noção sobre básicas interações em JS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBYS -->
+  <section id="hobbys">
+    <h2 class="shine-title">MEUS HOBBYS</h2>
+
+    <div class="hobbys-card">
+      <div class="hobby-card">
+        <div class="card-media frame"><img src="esporte.jpeg" alt="Esportes"></div>
+        <h3>Esportes</h3>
+        <p>
+          Adoro jogar bola e correr, mas não sei muito bem, costumo dizer que sempre estou aprendendo.
+          Jogo em alguns times da minha cidade, e sempre estou disposta a dar o meu melhor.
+        </p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="card-media frame"><img src="musica.jpeg" alt="Ouvir música"></div>
+        <h3>Ouvir música</h3>
+        <p>
+          Sempre costumo manter a música presente em minhas atividades, ela me acalma
+          e se tornou minha grande companheira.
+        </p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="card-media frame"><img src="fotobanda.jpeg" alt="Banda Marcial"></div>
+        <h3>Banda Marcial</h3>
+        <p>
+          Toco o instrumento chamado surdo, tenho pouco tempo de banda e sou extremamente apaixonada.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="panel dark-panel" id="contato">
+    <h2>Fale comigo!</h2>
+
+    <div class="contact-list">
+      <div class="contact-item">
+        <span class="icon"></span>
+        <p>karinevitoriasousa6@gmail.com</p>
+        <p>(89)994214649</p>
+      </div>
+
+      <div class="contact-item"> <a href="https://www.instagram.com/karine.sz_?igsh=MWF4ZWhvM3pxcDY2Zw==" target="_blank">@karine.sz_</a>
+        <span class="icon"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating">
+    <button id="themeToggle" class="theme-toggle">
+      <span class="dot"></span>
+    </button>
+
+    <button id="scrollTop" class="scroll-top">↑</button>
   </div>
 
-  <ul class="nav-right">
-    <li><a href="#about">Sobre</a></li>
-    <li><a href="#projects">Projetos</a></li>
-    <li><a href="#contact">Contato</a></li>
-  </ul>
-</nav>
-</header>
-
-
-<main>
-<section class="hero">
-<!-- Substitua URL_DA_SUA_IMAGEM_PERFIL pelo link da sua foto de perfil -->
-<img class="profile-photo" src="./assets/kalogo.png" alt="Foto de perfil">
-<div class="hero-text">
-<h1>Olá, eu sou <span class="name">Karine</span></h1>
-<p class="subtitle">Desenvolvedora • Aluna • Criadora</p>
-<a class="btn" href="#projects">Ver projetos</a>
-</div>
-</section>
-
-
-<section id="about" class="about">
-<h2>Sobre mim</h2>
-<p>Karine é uma jovem desenvolvedora apaixonada por tecnologia e criatividade. Desde que começou seus estudos, vem se destacando pela curiosidade, determinação e vontade de aprender coisas novas todos os dias. Gosta de transformar ideias em projetos funcionais, explorando desde interfaces intuitivas até pequenos sistemas completos.
-
-Além da área de desenvolvimento, Karine também carrega hobbies que influenciam sua forma de pensar e criar. Ela gosta de desenhar, usando a arte como forma de expressão; jogar, o que estimula sua lógica e imaginação; e ouvir música, seu passatempo favorito enquanto programa, trazendo sempre uma boa trilha sonora para seus códigos.
-
-Com seu talento, foco e personalidade leve, Karine segue evoluindo e construindo seu caminho no mundo da tecnologia — sempre com criatividade, cuidado e muita dedicação.</p>
-</section>
-
-
-<section id="projects" class="projects">
-<h2>Projetos</h2>
-<div class="grid">
-<!-- Exemplo de projeto. Substitua as URLs de imagem pelos seus links -->
-<article class="card">
-<a href="#">
-<img src="./assets/projeto1.jpg" alt="Projeto 1">
-<div class="card-body">
-<h3>Projeto 1</h3>
-<p>Descrição curta do projeto.</p>
-</div>
-</a>
-</article>
-
-
-<article class="card">
-<a href="#">
-<img src="./assets/projeto2.jpg" alt="Projeto 2">
-<div class="card-body">
-<h3>Projeto 2</h3>
-<p>Descrição curta do projeto.</p>
-</div>
-</a>
-</article>
-
-
-<article class="card">
-<a href="#">
-<img src="./assets/projeto3.jpg" alt="Projeto 3">
-<div class="card-body">
-<h3>Projeto 3</h3>
-<p>Descrição curta do projeto.</p>
-</div>
-</a>
-</article>
-
-
-</div>
-</section>
-
-
-<section id="contact" class="contact">
-<h2>Contato</h2>
-<p>Me mande um e‑mail: <a href="mailto:seu@email.com">karine@gmail.com</a></p>
-<p>Ou me encontre nas redes — <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<p>© <span id="year"></span> Seu Nome. Todos os direitos reservados.</p>
-</footer>
-
-
-<script>
-// atualiza ano no rodapé
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
